@@ -1,0 +1,3 @@
+Home will display all blog posts created by anyone
+
+Dashboard will have option to create/update/delete your posts
