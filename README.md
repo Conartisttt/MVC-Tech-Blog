@@ -1,3 +1,12 @@
+TODO:
+* 
+* 
+* 
+* 
+* 
+* 
+* 
+
 # MVC-Tech-Blog
 
 ## Table of Contents
@@ -12,7 +21,9 @@
 
 ## Description
 
-The purpose of the application is to allow 
+The purpose of the application is to allow developers to publish articles, blog posts, thougts and opinions, and comment on other developers posts. 
+
+It follows the MVC paradigm in its architectural structure, using Handlebars.js as the templating language, Sequelize as the ORM, and the express-session npm package for authentication.
 
 You can find the deployed application [here](insert heroku link)
 

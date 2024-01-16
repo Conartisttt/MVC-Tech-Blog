@@ -1,10 +1,9 @@
-//UPDATE FOR POST INSTEAD OF PROFILE
-
 const newFormHandler = async (event) => {
     event.preventDefault();
   
     const title = document.querySelector('#project-name').value.trim();
     const content = document.querySelector('#project-desc').value.trim();
+  
   
     if (title && content) {
       const response = await fetch(`/api/posts`, {
