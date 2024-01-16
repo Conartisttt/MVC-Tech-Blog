@@ -2,7 +2,19 @@
   <h2>{{title}}</h2>
   <p>{{content}}</p>
   <p>Created by {{user.name}} on {{format_date date_created}}</p>
+  {{#if comments.length}}
+  {{#each comments as |comment| }}
+{{!-- Write HTML to add comment content, who commented, and when --}}
+  {{/each}}
+  {{/if}}
   <p>
-    <button class="btn btn-primary">Fund this Project!</button>
+    <button class="btn btn-primary" id="comment">Leave a Comment</button>
   </p>
+  <div id="comment-div" class="hide">
+    <label id="add-comment-label">add comment:</label>
+    <input data-postId="{{id}}" class="form-input" type="text" id="add-comment-textbox" />
+    <button id="submit-comment">Submit</button>
+  </div>
 </div>
+
+<script src="../js/comment.js"></script>
