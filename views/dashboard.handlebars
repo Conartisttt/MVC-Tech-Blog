@@ -24,7 +24,7 @@
         </div>
         <div class="form-group">
           <button type="submit" class="btn btn-primary">Create</button>
-          <button id="cancelUpdateBtn" class="btn btn-primary">Cancel</button>
+          <button id="cancelCreateBtn" class="btn btn-primary">Cancel</button>
         </div>
       </form>
     </div>
@@ -32,19 +32,45 @@
   </div>
 
   {{#if posts.length}}
-  <div class="col-md-6 project-list">
+  <div id="currentPostsDiv" class="col-md-6 project-list">
     <h3>Current Posts:</h3>
 
     {{#each posts as |post|}}
     <div class="row mb-2">
-      <div class="col-md-8">
-        <h4><a href="/post/{{post.id}}">{{post.title}}</a></h4>
+      <div id="indivPost">
+        <div class="col-md-8">
+          <h4><a href="/post/{{post.id}}">{{post.title}}</a></h4>
+        </div>
+        <div id="editPostBtnDiv" class="editPostBtnDiv col-md-4">
+          <button id="editPostBtn" class="toggleEdit btn btn-sm btn-danger">EDIT</button>
+        </div>
+        <div id="updateDeleteDiv" class="col-md-6 hide">
+          <button id="updatePostBtn" class="btn btn-sm btn-danger">UPDATE</button>
+          <button id="deletePostBtn" class="btn btn-sm btn-danger" data-id="{{post.id}}">DELETE</button>
+          <button id="cancelEditBtn" class="btn btn-sm btn-danger">CANCEL</button>
+        </div>
       </div>
-      <div class="col-md-4">
-        <button class="btn btn-sm btn-danger" data-id="{{post.id}}">DELETE</button>
+      <div>
+        <form id="updateForm" class="hide">
+          <div>
+            <label for="updated-title">Title:</label>
+            <input id="updatedPostTitle" type="text" name="updated-title" value="{{post.title}}">
+          </div>
+          <div>
+            <label for="updated-title">Description:</label>
+            <input id="updatedPostContent" type="text" name="updated-title" value="{{post.content}}">
+          </div>
+          <button id="submitUpdateBtn" class="btn btn-sm btn-danger" data-update-id="{{post.id}}">UPDATE</button>
+          <button id="cancelUpdateBtn" class="btn btn-sm btn-danger">CANCEL</button>
+        </form>
       </div>
     </div>
     {{/each}}
+
+  </div>
+
+  <div id="updatePostDiv">
+
   </div>
   {{/if}}
 </div>
