@@ -10,6 +10,7 @@
   </div>
   {{/each}}
   {{/if}}
+  {{#if logged_in}}
   <p>
     <button class="btn btn-primary" id="comment">Leave a Comment</button>
   </p>
@@ -18,6 +19,12 @@
     <input data-postId="{{id}}" class="form-input" type="text" id="add-comment-textbox" />
     <button id="submit-comment">Submit</button>
   </div>
+  {{else}}
+  <p>
+    <button class="btn btn-primary" onclick="location.href='/login'">Leave a Comment</button>
+  </p>
+
+  {{/if}}
 </div>
 
 <script src="../js/comment.js"></script>
