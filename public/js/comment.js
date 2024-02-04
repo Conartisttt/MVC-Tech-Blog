@@ -11,11 +11,10 @@ function addCommentHandler() {
 }
 
 //call api to post new comment to database
-const submitCommentHandler = async () => {
+const submitCommentHandler = async (event) => {
+  event.preventDefault();
   const content = commentTextbox.value.trim();
   const post_id = document.querySelector('input').dataset.postid
-  console.log(post_id);
-  console.log(content);
 
   if (content) {
     const response = await fetch(`/api/comments`, {
@@ -27,16 +26,13 @@ const submitCommentHandler = async () => {
     });
 
     if (response.ok) {
-      console.log("done");
       document.location.reload();
     } else {
       alert('Failed to create project');
     }
+  } else {
+    alert("Something is missing, please try again.")
   }
-
-
-
-
 }
 
 //Event listeners
