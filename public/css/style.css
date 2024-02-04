@@ -1,3 +1,93 @@
 .hide {
     display: none;
 }
+
+#h1 {
+    text-decoration: none;
+    color: black;
+    font-family: 'Protest Guerrilla', sans-serif;
+    font-size: 100px;
+}
+
+.h2 {
+    text-decoration: none;
+    color: black;
+    font-family: 'Protest Guerrilla', sans-serif;
+    font-size: 30px;
+}
+
+.home-cards {
+    background-color: gray;
+    border-radius: 30px 30px 0% 30px;
+}
+
+.card-desc {
+    background-color: lightgray;
+    border-radius: 30px 30px 0% 30px;
+    font-size: 20px;
+}
+
+.layout {
+    position: relative;
+}
+
+.layout .more_link {
+    position: absolute;
+    display: block;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-indent: -9999px;
+    z-index: 1000;
+}
+
+.hover-effect:hover {
+    box-shadow: inset 0px 0px 5px rgb(0, 217, 255), 0 0 15px rgb(3, 153, 173);
+    transform: scale(1.03);
+    transition: all 0.5s ease-in-out;
+}
+
+.post-card {
+    background-color: gray;
+    border-radius: 30px 30px 0% 30px;
+    width: 75%;
+}
+
+.comment-card {
+    background-color: rgb(78, 166, 175);
+    border-radius: 20px 20px 0% 20px;
+    width: 70%;
+    /* border-style: solid; */
+}
+
+.container {
+    position: relative;
+}
+
+.center {
+    margin: 0;
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+#comment-div {
+    width: 80%;
+}
+
+.postTitle {
+    text-decoration: none;
+    background-color: gray;
+    padding: 20px;
+    border-radius: 20px 20px 0% 20px;
+    color: aqua;
+}
+
+#createPostDiv {
+    background-color: gray;
+    padding: 30px;
+    border-radius: 20px 20px 0% 20px;
+}
