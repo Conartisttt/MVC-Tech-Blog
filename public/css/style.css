@@ -1,3 +1,7 @@
+body {
+    margin: 15px;
+}
+
 .hide {
     display: none;
 }
@@ -50,6 +54,7 @@
 
 .post-card {
     background-color: gray;
+    border: gray;
     border-radius: 30px 30px 0% 30px;
     width: 75%;
 }
@@ -75,7 +80,7 @@
 }
 
 #comment-div {
-    width: 80%;
+    width: 70%;
 }
 
 .postTitle {
@@ -90,4 +95,27 @@
     background-color: gray;
     padding: 30px;
     border-radius: 20px 20px 0% 20px;
+}
+
+#noPosts {
+    margin-top: 100px;
+    text-align: center;
+}
+
+.post-content {
+    background-color: white;
+    font-size: 20px;
+    border-radius: 0px 30px 0px 0px;
+    margin-top: 20px;
+}
+
+.post-title {
+    text-decoration: underline;
+    font-size: 40px;
+}
+
+.post-tag {
+    background-color: white;
+    text-align: center;
+    border-radius: 0px 30px 0px 0px;
 }

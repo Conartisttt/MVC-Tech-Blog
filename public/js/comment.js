@@ -4,13 +4,13 @@ const commentDiv = document.getElementById("comment-div");
 const commentLabel = document.getElementById("add-comment-label");
 const commentTextbox = document.getElementById("add-comment-textbox")
 
-
+// Show comment add section
 function addCommentHandler() {
-  console.log('comment clicked');
   commentDiv.classList.remove("hide");
   commentBtn.classList.add("hide");
 }
 
+//call api to post new comment to database
 const submitCommentHandler = async () => {
   const content = commentTextbox.value.trim();
   const post_id = document.querySelector('input').dataset.postid
@@ -39,6 +39,7 @@ const submitCommentHandler = async () => {
 
 }
 
+//Event listeners
 const commentBtn = document.getElementById('comment');
 if (commentBtn) {
   commentBtn.addEventListener('click', addCommentHandler);
