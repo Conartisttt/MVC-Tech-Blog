@@ -4,7 +4,7 @@ const withAuth = require('../utils/auth');
 
 router.get('/', async (req, res) => {
     try {
-      // Get all projects and JOIN with user data
+      // Get all posts and JOIN with user data
       const postData = await Post.findAll({
         include: [
           {
@@ -27,6 +27,7 @@ router.get('/', async (req, res) => {
     }
   });
 
+  //Find post with id the same as given in the path :id
   router.get('/post/:id', async (req, res) => {
     try {
       const postData = await Post.findByPk(req.params.id, {
