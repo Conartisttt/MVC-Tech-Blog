@@ -1,4 +1,4 @@
-# MVC-Tech-Blog
+# MVC-Tech-Blog...make it count
 
 ## Table of Contents
 
@@ -12,7 +12,7 @@
 
 ## Description
 
-The purpose of the application is to allow developers to publish articles, blog posts, thougts and opinions, and comment on other developers posts. 
+The aim of this innovative blog is to empower users with the ability to create and share impactful posts, allowing each user to have only one post at a time. This unique approach enhances the significance of each post, fostering meaningful engagement and discussions within the tech community.
 
 It follows the MVC paradigm in its architectural structure, using Handlebars.js as the templating language, Sequelize as the ORM, and the express-session npm package for authentication.
 
