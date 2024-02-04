@@ -1,12 +1,18 @@
 <div class="text-center">
-  <h2>{{title}}</h2>
-  <p>{{content}}</p>
-  <p>Created by {{user.name}} on {{format_date date_created}}</p>
+  <div class="d-flex justify-content-center">
+    <div class="post-card">
+      <h2>{{title}}</h2>
+      <p>{{content}}</p>
+      <p>Created by {{user.name}} on {{format_date date_created}}</p>
+    </div>
+  </div>
   {{#if comments.length}}
   {{#each comments as |comment| }}
-  <div>
-    <p>{{comment.content}}</p>
-    <p>Commented by {{comment.user.name}} on {{format_date comment.date_created}}</p>
+  <div class="d-flex justify-content-center">
+    <div class="comment-card border border-info">
+      <p>{{comment.content}}</p>
+      <p>Commented by {{comment.user.name}} on {{format_date comment.date_created}}</p>
+    </div>
   </div>
   {{/each}}
   {{/if}}
@@ -14,11 +20,14 @@
   <p>
     <button class="btn btn-primary" id="comment">Leave a Comment</button>
   </p>
-  <div id="comment-div" class="hide">
-    <label id="add-comment-label">add comment:</label>
-    <input data-postId="{{id}}" class="form-input" type="text" id="add-comment-textbox" />
-    <button id="submit-comment">Submit</button>
-  </div>
+  <form class="d-flex justify-content-center">
+    <div id="comment-div" class="form-group hide">
+      <label id="add-comment-label">add comment:</label>
+      <input data-postId="{{id}}" class="form-control" type="text" id="add-comment-textbox" />
+          <button id="submit-comment" class="btn btn-primary">Submit</button>
+    </div>
+  </form>
+
   {{else}}
   <p>
     <button class="btn btn-primary" onclick="location.href='/login'">Leave a Comment</button>

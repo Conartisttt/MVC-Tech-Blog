@@ -1,14 +1,13 @@
 <!-- Loop over each object in the projects array -->
 {{#each posts as |post| }}
-<div class="row mb-4 project">
-  <div class="col-md-5">
-    <h2>
-      <a href="/post/{{post.id}}">{{post.title}}</a>
+<div class="row mb-4 mt-4 project justify-content-center">
+  <div class="col-md-5 home-cards layout hover-effect">
+    <h2 class="d-flex justify-content-center">
+      <a class="h2" href="/post/{{post.id}}">{{post.title}}</a>
     </h2>
     <p>
-    <p>Created on {{format_date post.date_created}}</p>
-  </div>
-  <div class="col-md-7">
+    <p class="d-flex justify-content-center card-desc">Created on {{format_date post.date_created}}</p>
+    <a class="more_link" href="/post/{{post.id}}"></a>
   </div>
 </div>
 {{/each}}

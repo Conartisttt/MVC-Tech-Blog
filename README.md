@@ -1,12 +1,6 @@
-
 TODO:
-* 
-* 
-* 
-* 
-* 
-* 
-* 
+* Deploy to heroku
+* Finalize README (add screenshots, usage, link to deployed site, etc)
 
 # MVC-Tech-Blog
 
@@ -48,10 +42,13 @@ Login/Signup:
 * HTML (Handlebars)
 * JavaScript
 * CSS
+* Bootstrap
 * Node.js
-* Express Server
+* Express.js
+* Express-session
 * MySQL Database
-* 
+* Sequelize
+* bCrypt for password hashing
 
 ## Usage
 * 
