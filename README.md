@@ -16,7 +16,7 @@ The aim of this innovative blog is to empower users with the ability to create a
 
 It follows the MVC paradigm in its architectural structure, using Handlebars.js as the templating language, Sequelize as the ORM, and the express-session npm package for authentication.
 
-You can find the deployed application [here](https://afternoon-basin-69831-2336cdd8235a.herokuapp.com/)
+You can find the deployed application [here](https://afternoon-basin-69831-98d2be827880.herokuapp.com/)
 
 The following screenshots demonstrates the applications functionality: 
 <br>
